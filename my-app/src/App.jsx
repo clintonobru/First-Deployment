@@ -40,7 +40,7 @@ function App() {
     <>
       {/* <NavbarRoute /> */}
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
 
