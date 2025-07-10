@@ -30,7 +30,7 @@ import UserProfile from './component/UserProfile'
 import NotFound from './component/NotFound'
 import ProtectedRoute from './component/ProtectedRoute'
 import ThemedButton from './context/ThemedButton'
-import SignIn from './component/Login'
+import Login from './component/Login'
 
 function App() {
   // const isAuthenticated = false
@@ -40,7 +40,7 @@ function App() {
     <>
       {/* <NavbarRoute /> */}
       <Routes>
-        <Route path="/login" element={<SignIn />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
 

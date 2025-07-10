@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import useFormInput from "../hooks/UseFormInput";
 
-function SignIn() {
+function Login() {
     const navigate = useNavigate();
     const [ email, setEmail ] = useState("");
     const [ password, setPassword ] = useState("");
@@ -52,7 +52,7 @@ function SignIn() {
     );
 }
 
-export default SignIn;
+export default Login;
 
 
 
