@@ -9,7 +9,7 @@ function Profile() {
 
     useEffect(() => {
         const getUserInfo = async () => {
-            const res = await axios.get(`http://localhost:2468/user/${id}`, {
+            const res = await axios.get(`https://first-deployment-vuna.onrender.com/user/${id}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("Token")}`,
                 },

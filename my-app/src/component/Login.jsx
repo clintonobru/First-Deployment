@@ -15,7 +15,7 @@ function SignIn() {
         console.log(email);
 
         try {
-            const res = await axios.post("http://localhost:2468/user/login", {
+            const res = await axios.post("https://first-deployment-vuna.onrender.com/user/login", {
                 email: email,
                 password: password,
             });
