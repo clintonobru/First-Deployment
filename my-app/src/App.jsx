@@ -1,28 +1,6 @@
 import './App2.css'
-import ClassComponent from './component/ClassComponent'
-import Counter from './component/Counter2'
-import Welcome from './component/Welcome'
-import Greeting from './component/Greeting'
-import Greeting2 from './component/Greeting2'
-import ClassGreeting from './component/ClassGreeting'
-import ClassTimer from './component/ClassTimer'
-import Timer from './component/FunctionalTimer'
-import Button from './component/Button'
-import Css from './component/Css'
-import Parent from './component/Parent'
-import Child from './component/Child'
-import GrandChild from './component/GrandChild'
-import Navbar from './component/Navbar'
-import SectionTwo from './component/GloSectionTwo'
-import Footer from './component/Footer'
-import DataFetching from './component/DataFetching'
-import AxiosFetch from './component/AxiosFetch'
-import ControlledInput from './component/Controlledinput'
-import TodoApp from './component/ToDoList'
 import { Routes, Route, Navigate } from "react-router-dom"
 import Home from './component/Home'
-import About from './component/About'
-import NavbarRoute from './component/MyRouteNavbar'
 import Dashboard from './component/Dashboard'
 import Profile from './component/Profile'
 import Settings from './component/Settings'
@@ -40,10 +18,10 @@ function App() {
     <>
       {/* <NavbarRoute /> */}
       <Routes>
-        <Route path="login" element={<Login />} />
-        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
-
+        <Route path="*" element={<NotFound />} />
+        <Route path="login" element={<Login />} />
+        
         <Route
           path="/dashboard"
           element={
